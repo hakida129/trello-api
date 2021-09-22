@@ -1,12 +1,12 @@
 import express from 'express'
-
+import { mapOrder } from '*/utilities/sorts.js'
 const app = express()
 
 const hostname = 'localhost'
 const port = 8017
 
 app.get('/', (req, res) => {
-  res.end('<h2>Welcome</h2>')
+  res.send(`<h2>Hello word</h2>`)
 })
 
 app.listen(port, hostname, () => {
